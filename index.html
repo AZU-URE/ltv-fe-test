@@ -12,21 +12,26 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <link rel="stylesheet" href="./src/index.css" type="text/css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="container">
         <a href="./index.html">
-          <img src="assets/logo.svg" width="173" height="25" alt="" />
+          <img src="./src/assets/logo.svg" width="173" height="25" alt="" />
         </a>
       </div>
       <div>
-        <img src="assets/search.svg" width="23" height="23" alt="Search" />
+        <img
+          src="./src/assets/search.svg"
+          width="23"
+          height="23"
+          alt="Search"
+        />
         <img
           class="ml-4"
-          src="assets/person.svg"
+          src="./src/assets/person.svg"
           alt="Profile"
           width="23"
           height="23"
@@ -70,7 +75,7 @@
           <div
             class="d-flex justify-content-start justify-content-md-end align-items-center mt-4 info"
           >
-            <img src="assets/lock.svg" alt="lock" />
+            <img src="./src/assets/lock.svg" alt="lock" />
             <p class="form-subtext">People in the search won't be notified.</p>
           </div>
         </form>
@@ -175,7 +180,7 @@
           <div class="result-card d-flex" id="result-card">
             <div class="result-name">
               <div class="result-avatar">
-                <img src="assets/person.svg" alt="result image" />
+                <img src="./src/assets/person.svg" alt="result image" />
               </div>
               <div class="desc">
                 <h4 id="user-name" class="name"></h4>
@@ -250,7 +255,7 @@
     </section>
 
     <div class="hidden" id="pageLoader">
-      <img src="./assets/loading_spinner.gif" />
+      <img src="./src/assets/loading_spinner.gif" />
       <p>Please wait a moment!</p>
     </div>
 
@@ -272,6 +277,6 @@
         </div>
       </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="./src/index.js"></script>
   </body>
 </html>

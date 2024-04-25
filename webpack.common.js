@@ -1,11 +1,11 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
   },
   module: {
     rules: [
@@ -15,17 +15,17 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: [["@babel/preset-env", { modules: false }]]
-          }
-        }
+            presets: [["@babel/preset-env", { modules: false }]],
+          },
+        },
       },
       {
         test: /\.(sa|sc|c)ss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.html$/,
-        loader: 'html-loader',
+        loader: "html-loader",
         options: {
           sources: {
             list: [
@@ -53,27 +53,27 @@ module.exports = {
               {
                 tag: "lottie-player",
                 attribute: "src",
-                type: "src"
+                type: "src",
               },
               {
                 tag: "link",
                 attribute: "href",
-                type: "src"
+                type: "src",
               },
             ],
           },
           minimize: false,
-        }
+        },
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: "./src/index.html",
     }),
   ],
 };
