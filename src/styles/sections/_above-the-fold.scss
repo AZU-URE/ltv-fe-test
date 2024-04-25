@@ -1,0 +1,62 @@
+.above-the-fold {
+  background: #004a80;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 60vw;
+
+    .input-group {
+      width: 100%;
+      display: flex;
+      input {
+        width: 100%;
+        border: none;
+      }
+      button {
+        padding: auto 5rem;
+      }
+    }
+    .info {
+      display: flex;
+      float: right;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.above-the-fold .headline {
+  max-width: 780px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.input-choice {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  p {
+    color: white;
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+  button {
+    margin-right: 2rem;
+    color: #004a80;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+  }
+  .active {
+    background-color: #f3d34b;
+    border: none;
+  }
+  .inactive {
+    border: 0.15rem solid #f3d34b;
+    background: #004a80;
+    color: #f3d34b;
+  }
+}

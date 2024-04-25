@@ -1,0 +1,85 @@
+.btn-form-submit {
+  font-size: 24px;
+  font-weight: bold;
+  color: #004a80;
+  background-image: linear-gradient(225deg, #f2da56 0%, #f6bc25 100%);
+  box-shadow: 0 3px 0 0 #a6953b, inset 0 1px 0 0 #ffffff;
+  border-radius: 6px;
+  outline: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 12vw;
+  margin-left: 20px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin: 12px 0 0 0;
+  }
+
+  &:hover {
+    background-image: none;
+    background-color: #f2da56;
+  }
+  &:active {
+    background-color: #f6bc25;
+  }
+}
+
+.input-group {
+  position: relative;
+  > .form-control {
+    height: 70px;
+    background: #fff;
+    box-shadow: inset 0 -1px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px !important;
+    font-size: 22px;
+
+    &::placeholder {
+      color: #9b9b9b;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+      height: 50px;
+    }
+  }
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.error > .form-control {
+    border: 10px solid #dc0015;
+    border-radius: 3px 3px 0 0 !important;
+  }
+}
+
+.form-subtext {
+  font-size: 16px;
+  color: #fff;
+  margin: 0 0 0 15px;
+  line-height: normal;
+}
+
+.error-msg {
+  display: none;
+}
+
+.input-group.error .error-msg {
+  display: block;
+  @media (min-width: 767px) {
+    position: absolute;
+    padding: 4px 12px;
+    // bottom: 0px;
+    bottom: -1.65rem;
+  }
+  margin: 0px;
+  background: #dc0015;
+  color: #fff;
+  border-radius: 0 0 3px 3px;
+  font-size: 16px;
+}
